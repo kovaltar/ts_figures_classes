@@ -74,8 +74,12 @@ export class Rectangle implements Figure {
   }
 }
 
-type FigureType = Triangle | Circle | Rectangle;
+// type FigureType = Triangle | Circle | Rectangle;
 
-export function getInfo(figure: FigureType): string {
+// export function getInfo(figure: FigureType): string {
+//   return `A ${figure.color} ${figure.shape} - ${figure.getArea()}`;
+// }
+
+export function getInfo(figure: Figure): string {
   return `A ${figure.color} ${figure.shape} - ${figure.getArea()}`;
 }
